@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do Web</title>
+
+    <!-- css -->
+     <link rel="stylesheet" href="style.css">
+
+     <!-- jquery -->
+     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>     
+
+     <style>
+        
+.task-check:checked::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color:rgb(185, 185, 185);
+    border-radius: 20px;
+    background-image: url('https://img.icons8.com/?size=100&id=3061&format=png&color=000000');
+    background-size: cover;
+}
+     </style>
+     
+</head>
+<body>
+    
+    <div class="background"></div>
+    
+    <div class="list-addition">
+
+        <div class="heading">
+            <h2>To-do List </h2>
+        </div>
+
+        <div class="row">
+        <input type="text" id="task" class="task" placeholder="Add task here">
+        <button id="addBtn">Add</button>
+        </div>
+        <p id="err1"></p>
+        <ul id="list"></ul>
+
+    </div>
+
+    <!-- js link -->
+    <script src="script.js"></script>
+</body>
+</html>
